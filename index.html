@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мій Блог</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Мій<span>Блог</span></a>
+
+      <!-- Mobile menu checkbox trick (no JS) -->
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="burger" for="nav-toggle" aria-label="Відкрити меню">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#posts">Пости</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#about">Про мене</a>
+        <a class="btn small" href="#contact">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Блог про навчання, ідеї та натхнення</h1>
+        <p>
+          Тут я ділюся нотатками, корисними порадами та історіями.
+          Сайт адаптивний і зроблений на чистих HTML/CSS.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#posts">Читати пости</a>
+          <a class="btn ghost" href="#contact">Написати мені</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>12+</strong>
+            <span>публікацій</span>
+          </div>
+          <div class="stat">
+            <strong>5</strong>
+            <span>тем</span>
+          </div>
+          <div class="stat">
+            <strong>∞</strong>
+            <span>ідей</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="badge">Нове</div>
+        <h3>Пост тижня</h3>
+        <p>Як організувати навчання: 7 простих правил + чекліст.</p>
+        <a class="btn small" href="#posts">Відкрити</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts -->
+  <main class="container">
+    <section id="posts" class="section">
+      <div class="section-head">
+        <h2>Останні пости</h2>
+        <a class="link" href="#">Дивитися всі →</a>
+      </div>
+
+      <div class="grid posts">
+        <article class="card post">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <div class="meta">Навчання • 03.02.2026</div>
+            <h3>Як вчитися швидше без вигорання</h3>
+            <p>Поради для режиму, концентрації та відпочинку. Коротко і по суті.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#">Читати</a>
+              <button class="btn small ghost" type="button">Зберегти</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card post">
+          <div class="thumb alt"></div>
+          <div class="card-body">
+            <div class="meta">Ідеї • 01.02.2026</div>
+            <h3>50 тем для блогу на місяць</h3>
+            <p>Генератор тем: від оглядів до історій. Бери та пиши без пауз.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#">Читати</a>
+              <button class="btn small ghost" type="button">Поділитись</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card post">
+          <div class="thumb alt2"></div>
+          <div class="card-body">
+            <div class="meta">Дизайн • 28.01.2026</div>
+            <h3>Як зробити сайт красивим без JS</h3>
+            <p>Плавні анімації, hover-ефекти, адаптивність і акуратна верстка.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#">Читати</a>
+              <button class="btn small ghost" type="button">Лайк</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="section-head">
+        <h2>Галерея</h2>
+        <p class="muted">Плитка з hover-анімацією (підставиш свої фото).</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot"><img src="https://picsum.photos/600/600?1" alt="Фото 1"></figure>
+        <figure class="shot"><img src="https://picsum.photos/600/600?2" alt="Фото 2"></figure>
+        <figure class="shot"><img src="https://picsum.photos/600/600?3" alt="Фото 3"></figure>
+        <figure class="shot"><img src="https://picsum.photos/600/600?4" alt="Фото 4"></figure>
+        <figure class="shot"><img src="https://picsum.photos/600/600?5" alt="Фото 5"></figure>
+        <figure class="shot"><img src="https://picsum.photos/600/600?6" alt="Фото 6"></figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>Про мене</h2>
+        <p class="muted">Короткий блок про автора блогу.</p>
+      </div>
+
+      <div class="card about">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h3>Іван</h3>
+          <p>
+            Люблю робити прості та красиві сайти. Пишу про навчання,
+            технології та мотивацію.
+          </p>
+          <div class="pill-row">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">Блог</span>
+            <span class="pill">Дизайн</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Контакти</h2>
+        <p class="muted">Форма з валідацією HTML (required).</p>
+      </div>
+
+      <div class="grid contact">
+        <form class="card form" action="#" method="post">
+          <label>
+            Ім’я
+            <input type="text" name="name" placeholder="Напр. Іван" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="name@example.com" required />
+          </label>
+
+          <label>
+            Повідомлення
+            <textarea name="message" rows="5" placeholder="Напиши тут..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Надіслати</button>
+          <p class="muted small">
+            * Це демо. Для реальної відправки потрібен сервер або сервіс форм.
+          </p>
+        </form>
+
+        <div class="card side">
+          <h3>Швидкі кнопки</h3>
+          <p class="muted">Приклад кнопок-лінків.</p>
+          <div class="side-actions">
+            <a class="btn ghost" href="#posts">До постів</a>
+            <a class="btn ghost" href="#gallery">До галереї</a>
+            <a class="btn ghost" href="#about">Про мене</a>
+          </div>
+
+          <div class="note">
+            <h4>Порада</h4>
+            <p>Хочеш темну тему або інші кольори — скажи, і я перероблю стилі.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Мій Блог • Зроблено на HTML/CSS</p>
+      <div class="footer-links">
+        <a href="#posts">Пости</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакти</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
